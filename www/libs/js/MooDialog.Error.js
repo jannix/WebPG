@@ -1,0 +1,1 @@
+MooDialog.Error = new Class({  Extends: MooDialog.Alert,  options: { textPClass: 'MooDialogError' }  }); 

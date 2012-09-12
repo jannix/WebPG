@@ -1,0 +1,16 @@
+Here comes the various steps to Deploy your web an mysql server:
+
+- Copy the web directory into your home directory, to have a copy of it
+- Modify the various files so that it match with your config (for example replace login by your real login and group by your group, set the various ports, etc...)
+- Copy the web directory to /tmp/login/web
+- Use apachectl to control apache (./apachectl [start | stop])
+- Try to connect to your web server with your browser
+- Try to create a php file and access it via your browser
+- Copy the my.cnf file into ~/ so that it's named ~/.my.cnf
+- Launch the command mysql_install_db to create the system database
+- Start the mysql server with 'mysqld_safe &'
+- To change your MySQL root password run the following command : mysqladmin -u root password '*************'
+- Try to connect to the database using 'mysql -u root -p'
+- You're done
+
+Note: To stop the mysqld process, you should use a command like this one : kill `cat /tmp/kri5/web/mysql/mysql.pid`
